@@ -1554,11 +1554,483 @@ transition of gradients otherwise there is no way :\ */
  .diagonal-background{
   display: none;
  }
- 
+ .instagram-heading{
+  margin-left: 2px;
+ }
+/* 
+ iframe{
+  margin-left: 2px;
+ } */
+ .micform{
+  margin-left: 2px;
+  /* width: 50%; */
+ }
+ iframe{
+  width: 287px !important;
+  height: 400px !important;
+  margin-left: 20px !important;
+ }
+}
+
+@media only screen and (min-width: 376px) and  (max-width: 515px){
+  .imgdiv {
+    text-align: center;
+    /* Center-align its children horizontally */
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    /* Adjust the height as needed */
+  }
+
+  .shadowlogo {
+    height: auto;
+    max-width: 90%;
+    display: block;
+    margin-left: 40px;
+    /* Adjust the margin as needed */
+    margin-top: 150px;
+  }
+
+
+  #about {
+    margin-top: 1000px;
+    /* You can adjust this value as needed */
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 245px;
+    margin: 55px auto;
+    margin-left: 30px;
+  }
+
+  #element {
+    font-family: 'Satisfy', cursive;
+    margin-top: 5px;
+    margin-left: 65px;
+    color: #cd0808;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .info p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .info {
+    margin-top: 15px;
+    margin-left: 35px;
+    color: var(--fifth-color);
+  }
+
+  .wrapper {
+    margin-top: 10px;
+    margin-left: 43px;
+  }
+
+  .btncon {
+    margin-top: 65px;
+    margin-left: 7px;
+    text-align: center;
+  }
+
+  .teambutton {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #our-team {
+    margin-top: 1000px;
+  }
+
+  #services {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0;
+    /* Add some padding for spacing */
+  }
+
+  .column {
+    width: 100%;
+    padding: 0 1em;
+    text-align: center;
+    margin-bottom: 1.5em;
+    /* Add margin between columns */
+  }
+
+  .card {
+    width: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(var(--primary-color) 50%, #cd0808 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .h3class {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+  }
+
+  .icon-wrapper {
+    background-color: #cd0808;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+  }
+
+  .card:hover {
+    background-position: 0 100%;
+  }
+
+  .card:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #cd0808;
+  }
+
+  .card:hover h3 {
+    color: #ffffff;
+  }
+
+  .card:hover p {
+    color: #f0f0f0;
+  }
+
+.contact-image{
+  display: none;
+}
+.promocon {
+  flex-direction: column;
+  margin-left: -300px;
+}
+
+.cono {
+  margin-bottom: 10px;
+}
+
+.formresp{
+  margin-left: 56px;
+}
+.touch{
+  width: 380%;
+  margin-left: -118px;
+  text-align: center;
+}
+
+#name{
+  width: 2000px;
+}
+
+#email{
+  width: 2000px;
+  margin-top: 300px;
+}
+.touch h2{
+  font-size: 26px;
+}
+.hhhh{
+ margin-left: 12px; 
+}
+#hhhh{
+  margin-left: -80px; 
+ }
+#em{
+  margin-left: 2px; 
+ }
+ .responsive{
+  margin-top: -517px;
+  margin-left: 831px;
+ }.emresp{
+  margin-top: -45px;
+  margin-left: -100px;
+ }
+ .btnclass{
+  margin-left: -100px;
+ }
+
+ .diagonal-background{
+  display: none;
+ }
+ .instagram-heading{
+  margin-left: 2px;
+ }
+/* 
+ iframe{
+  margin-left: 2px;
+ } */
+ .micform{
+  margin-left: 2px;
+  /* width: 50%; */
+ }
+ iframe{
+  width: 287px !important;
+  height: 400px !important;
+  margin-left: 20px !important;
+ }
+
+}
+@media only screen and (min-width: 516px) and  (max-width: 768px){.imgdiv {
+  text-align: center;
+  /* Center-align its children horizontally */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  /* Adjust the height as needed */
+}
+
+.shadowlogo {
+  height: auto;
+  max-width: 50%;
+  display: block;
+  margin-left: 40px;
+  /* Adjust the margin as needed */
+  margin-top: 150px;
 }
 
 
+#about {
+  margin-top: 1000px;
+  /* You can adjust this value as needed */
+  text-align: center;
+}
 
+.right {
+  width: 100%;
+  text-align: center;
+}
+
+.right img {
+  max-width: 70%;
+  height: auto;
+  margin-top: 245px;
+  margin: 55px auto;
+  margin-left: 30px;
+}
+
+#element {
+  font-family: 'Satisfy', cursive;
+  margin-top: 5px;
+  margin-left: 65px;
+  color: #cd0808;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.info p {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.info {
+  margin-top: 15px;
+  margin-left: 35px;
+  color: var(--fifth-color);
+}
+
+.wrapper {
+  margin-top: 10px;
+  margin-left: 43px;
+}
+
+.btncon {
+  margin-top: 65px;
+  margin-left: 7px;
+  text-align: center;
+}
+
+.teambutton {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#our-team {
+  margin-top: 1000px;
+}
+
+#services {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 0;
+  /* Add some padding for spacing */
+}
+
+.column {
+  width: 100%;
+  padding: 0 1em;
+  text-align: center;
+  margin-bottom: 1.5em;
+  /* Add margin between columns */
+}
+
+.card {
+  width: 100%;
+  padding: 2em 1.5em;
+  background: linear-gradient(var(--primary-color) 50%, #cd0808 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.h3class {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f194c;
+  margin: 1em 0;
+}
+
+.icon-wrapper {
+  background-color: #cd0808;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+
+.card:hover {
+  background-position: 0 100%;
+}
+
+.card:hover .icon-wrapper {
+  background-color: #ffffff;
+  color: #cd0808;
+}
+
+.card:hover h3 {
+  color: #ffffff;
+}
+
+.card:hover p {
+  color: #f0f0f0;
+}
+
+.contact-image{
+display: none;
+}
+.promocon {
+flex-direction: column;
+margin-left: -300px;
+}
+
+.cono {
+margin-bottom: 10px;
+}
+
+.formresp{
+margin-left: 56px;
+}
+.touch{
+width: 380%;
+margin-left: -118px;
+text-align: center;
+}
+
+#name{
+width: 2000px;
+}
+
+#email{
+width: 2000px;
+margin-top: 300px;
+}
+.touch h2{
+font-size: 26px;
+}
+.hhhh{
+margin-left: 12px; 
+}
+#hhhh{
+margin-left: -80px; 
+}
+#em{
+margin-left: 2px; 
+}
+.responsive{
+margin-top: -517px;
+margin-left: 831px;
+}.emresp{
+margin-top: -45px;
+margin-left: -100px;
+}
+.btnclass{
+margin-left: -100px;
+}
+
+.diagonal-background{
+  position: fixed !important;
+  top: -249px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100%;
+  background: linear-gradient(to bottom right, transparent 49.5%, #cd0808 50%) !important;
+  z-index: -1 !important;
+  transform: skewY(-32deg) !important;
+  margin-left: -1112px !important;
+  transition: opacity 0.7s ease !important; /* Add a smooth transition for opacity */
+    opacity: 1 !important; /* Initial opacity */
+}
+.instagram-heading{
+margin-left: 2px;
+}
+/* 
+iframe{
+margin-left: 2px;
+} */
+.micform{
+margin-left: 2px;
+/* width: 50%; */
+}
+iframe{
+width: 287px !important;
+height: 400px !important;
+margin-left: 20px !important;
+}}
 #contact-us {
   background-color: #f7f7f7;
   padding: 60px 0;
