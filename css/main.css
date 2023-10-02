@@ -10,14 +10,37 @@
 } */
 /* Style for the vertical scrollbar */
 
-
+#daynight img{
+  width: 20px;
+  height: auto;
+}
 *,
 ::after,
 ::before {
   box-sizing: border-box;
 }
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+#moonche {
+  transition: opacity 0.3s ease;
+}
 
+/* Add a spin animation for the icons */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the spin animation to the icons */
+.icon-spin {
+  animation: spin 0.6s linear 1;
+}
 /* Reset default margins and paddings */
 body,
 h1,
@@ -213,9 +236,10 @@ header a:hover::before {
   /* margin-top: -25px; */
 }
 #logo{
-  display: none;
+  /* display: none; */
   transition: 10.3s;
 }
+
 .btn {
   --color: #fff;
   font-family: inherit;
@@ -281,6 +305,9 @@ header a:hover::before {
 
 /* Add these styles for responsiveness */
 @media screen and (max-width: 768px) {
+  .logo{
+    display: block;
+  }
   header.sticky {
     padding: 15px 17px;
   }
@@ -992,12 +1019,9 @@ transition of gradients otherwise there is no way :\ */
 /* Style for the container */
 .team-members-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  /* Center vertically */
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
 
 #our-team .team-member img {
   width: 120px;
@@ -1138,6 +1162,7 @@ transition of gradients otherwise there is no way :\ */
 
 #services {
   height: 200vh;
+  margin-top: 200px;
 
 }
 
@@ -1198,7 +1223,7 @@ transition of gradients otherwise there is no way :\ */
 
 
 #services h2 {
-  margin-top: 12px;
+  margin-top: 95px;
   text-align: center;
   font-size: 38px;
   color: var(--second-color);
@@ -1382,6 +1407,7 @@ transition of gradients otherwise there is no way :\ */
   .right {
     width: 100%;
     text-align: center;
+    /* margin-left: 4px; */
   }
 
   .right img {
@@ -1389,7 +1415,7 @@ transition of gradients otherwise there is no way :\ */
     height: auto;
     margin-top: 245px;
     margin: 55px auto;
-    margin-left: 30px;
+    margin-left: 4px;
   }
 
   #element {
@@ -1805,7 +1831,10 @@ transition of gradients otherwise there is no way :\ */
   text-align: center;
   /* Center-align its children horizontally */
 }
+.team-members-container {
+  flex-direction:column-reverse;
 
+}
 .container {
   display: flex;
   justify-content: center;
