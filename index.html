@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
 
 
     <title>Promertia-Building Businesses!</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 
 
 </head>
@@ -59,7 +59,7 @@
                 <li><a href="#home" class="navli">Home</a></li>
                 <li><a href="#about" class="navli">About</a></li>
                 <li><a href="#our-team" class="navli">Our Team</a></li>
-                <li><a href="#services" class="navli">Services</a></li>
+                <li><a href="#servicesc" class="navli">Services</a></li>
                 <li><a href="#contact" class="navli">Contact</a></li>
                 <li><a href="index.html" class="navli">Internships</a></li>
 
@@ -69,10 +69,12 @@
                     </form>
                 </li>
                 <li id="daynight"><label class="switch" id="switch">
-                        <input type="checkbox" id="clickme">
-                        <span class="slider">
-                            <span class="circle">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                        <input type="checkbox" id="ddfdf">
+                        <img id="moonche" src="img/moon.png" alt="">
+                        <!-- <span class="slider"> -->
+                            
+                            <!-- <span class="circle"> -->
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" x="0" y="0"
                                     viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve"
                                     class="sun">
@@ -99,17 +101,18 @@
                                             <rect fill="currentColor" height="512" width="512"></rect>
                                         </clipPath>
                                     </defs>
-                                </svg>
-                            </span>
-                        </span>
+                                </svg> -->
+                            <!-- </span> -->
+                        <!-- </span> -->
                     </label></li>
+                    
                 <label for="check" class="menu-icon">
                     <!-- <i class="fas fa-bars menu-icon-bars"></i> -->
                     <i class="fas fa-times menu-icon-close"></i>
                 </label>
             </ul>
         </header>
-        <div class="diagonal-background"></div>
+        <!-- <div class="diagonal-background"></div> -->
         <!-- <div class="content"> -->
         <!-- <section class="hero"></section>
     <div class="container">
@@ -255,8 +258,8 @@
                 <div style="display: flex; justify-content: space-between;">
                     <div class="team-member" data-aos="fade-down-right" data-aos-duration="1000">
                         <div class="member-link">
-                            <a href="https://dhruv2021.github.io/prt2/" target="_blank"> <img class="dkimg"
-                                    src="img/dhruvk.jpg" alt="Team Member 1"></a>
+                            <a href="https://bit.ly/itsdhruvkaushik" target="_blank"> <img class="dkimg"
+                                    src="img/dhruvk1.png" alt="Team Member 1"></a>
                             <div class="moreinfo">More Info<svg class="visit" xmlns="http://www.w3.org/2000/svg"
                                     height="1em"
                                     viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -306,7 +309,7 @@
         </section>
 
         <section id="services" class="hidden">
-            <h2 class="serviceheading" data-aos="fade-up" data-aos-duration="1000">Services</h2>
+            <h2 id="servicesc" class="serviceheading" data-aos="fade-up" data-aos-duration="1000">Services</h2>
             <div class="animated-bar" data-aos="fade-up" data-aos-duration="1000"></div>
             <div class="row">
 
@@ -488,36 +491,53 @@
     // }
 
     // var icon = document.getElementById("clickme");
-    var icon = document.getElementById("clickme");
-    var logo = document.getElementById("logo");
-    var yt = document.getElementById("yt");
+    var icon = document.getElementById("moonche");
+var logo = document.getElementById("logo");
+var yt = document.getElementById("yt");
 
-    // Check if the user's theme preference is stored in localStorage
-    var savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-        document.body.classList.add("dark-theme");
-        logo.src = "img/promertia-logo-dark.png";
-        yt.src = "img/promertia-logo-dark.png";
-        icon.checked = true; // Set the checkbox state to match the theme
-    }
+// Check if the user's theme preference is stored in localStorage
+var savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+    document.body.classList.add("dark-theme");
+    logo.src = "img/promertia-logo-dark.png";
+    yt.src = "img/promertia-logo-dark.png";
+    icon.src = "img/sun.png"; // Update the icon source
+    icon.checked = true; // Set the checkbox state to match the theme
+} else {
+    icon.src = "img/moon.png"; // Set the default icon source for light mode
+}
 
-    // Handle the slider change event
-    icon.onchange = function () {
-        document.body.classList.toggle("dark-theme");
+// Handle the slider change event
+icon.onclick = function () {
+    document.body.classList.toggle("dark-theme");
 
-        if (document.body.classList.contains("dark-theme")) {
+    if (document.body.classList.contains("dark-theme")) {
+        icon.style.opacity = "0"; // Hide the icon
+        setTimeout(function () {
+            icon.src = "img/sun.png";
             logo.src = "img/promertia-logo-dark.png";
             yt.src = "img/promertia-logo-dark.png";
-
-            localStorage.setItem("theme", "dark");
-        } else {
+            icon.style.opacity = "1"; // Show the icon with fade-in effect
+            icon.classList.add("icon-spin"); // Add the spin animation class
+        }, 30); // Wait for 300 milliseconds (same as the transition duration) before changing the icon
+        localStorage.setItem("theme", "dark");
+    } else {
+        icon.style.opacity = "0"; // Hide the icon
+        setTimeout(function () {
+            icon.src = "img/moon.png";
             logo.src = "img/promertia-logo.png";
             yt.src = "img/promertia-logo.png";
-
-            localStorage.setItem("theme", "light");
-        }
+            icon.style.opacity = "1"; // Show the icon with fade-in effect
+            icon.classList.add("icon-spin"); // Add the spin animation class
+        }, 30); // Wait for 300 milliseconds (same as the transition duration) before changing the icon
+        localStorage.setItem("theme", "light");
     }
-
+    
+    // Remove the spin class after the animation completes
+    icon.addEventListener("animationend", function () {
+        icon.classList.remove("icon-spin");
+    });
+}
 
     const header = document.querySelector("header");
     const diagonalBackground = document.querySelector(".diagonal-background");
